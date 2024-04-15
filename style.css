@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 45px;
+    color: rgb(70, 70, 233);
+    font-weight: 900;
+
+}
+.navbar a{
+    margin-left: 35px;
+    font-size: 25px;
+    color: white;
+    transition: 2s;
+}
+.navbar a.active,
+.navbar a:hover{
+    color: rgb(121, 121, 233);
+    border-bottom: 1px solid rgb(121, 121, 233);
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(-90deg, blue , red) ;
+    animation-name: my_picture;
+    animation-duration: 2s;
+
+}
+.home-content{
+    position: relative;
+    top: -20px;
+    left: 30px;
+   
+}
+.home-content h1{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Arial;
+    color:rgb(3, 3, 56);
+}
+.home-content h3{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Arial;
+    color: #fff;
+}
+.btn{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 25px ;
+    outline: none;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Arial;
+    color: rgb(160, 5, 5) ;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    transition: 2s;
+    background-color: rgb(3, 3, 56);
+    animation-name: my_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+ 
+
+}
+@keyframes my_animation{
+    0%{
+        background-color:  rgb(3, 3, 56);
+    }
+    25%{
+        background-color:  rgb(160, 5, 5);
+        color: #fff ;
+    }
+    50%{
+        background-color:  rgb(3, 3, 56);
+    }
+    75%{
+       background-color: rgb(160, 5, 5);
+       color: #fff;
+    }
+    100%{
+        background-color:  rgb(3, 3, 56);
+    }
+
+}
+
+.btn:hover{
+    color: rgb(3, 3, 56);
+    background-color:  rgb(160, 5, 5);
+  
+
+}
+.img img{
+    position: relative;
+    left: 15%;
+    top: -10px;
+    border-radius: 10px;
+    animation-name: my_picture;
+    animation-duration: 2s;
+
+}
+@keyframes my_picture{
+    0% {
+        filter: blur(40px);
+    }
+
+    100%{ 
+        filter: blur(0px);
+    }
+}
+
